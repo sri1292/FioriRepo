@@ -1,0 +1,102 @@
+GitHub
+
+https://github.com/LambWestonIT/ZRTR_EXCEL_UPLOAD.git
+GIT: Royaloak@123
+PAT: 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
+
+User name: USS1089
+https://github.com/LambWestonIT/SAP_Fiori.git
+GIT: Redminote123/ Royaloak@123
+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
+
+1. Initialize Git, set email & user name of GIT
+git init
+git config —-global user.email "Email configured to GitHub"
+git config —-global user.name "Account name"
+
+2. Push to existing repository
+git remote add origin <repo-url>
+
+If already exist then use git remote set-url origin <repo-url>
+git branch -M main
+git add .
+git commit -m "commit msg"
+git push -u origin main
+
+3. Clone a specific branch 
+git clone -b <branch name> <repo url>
+
+4. Pull latest code from a specific branch
+Note: Make sure you are in brach that you don't want to pull
+git checkout master
+git pull origin development
+
+5. Push new project from BAS & repo already exist in Git
+git init
+git add .
+git commit -m “my SAPUI5 CF first commit”
+git branch -M main
+git remote add origin https://github.com/Showkath/helloSAPUI5CF.git
+git push -u origin main
+
+
+user: DemoRepo $ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+user: DemoRepo $ git checkout master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Switched to a new branch 'master'
+user: DemoRepo $ git clone https://github.com/sri1292/DemoRepo.git
+Cloning into 'DemoRepo'...
+remote: Enumerating objects: 69, done.
+remote: Counting objects: 100% (69/69), done.
+remote: Compressing objects: 100% (51/51), done.
+remote: Total 69 (delta 10), reused 61 (delta 8), pack-reused 0
+Unpacking objects: 100% (69/69), done.
+user: DemoRepo $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   webapp/i18n/i18n.properties
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        DemoRepo/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+user: DemoRepo $ git add .
+warning: adding embedded git repository: DemoRepo
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> DemoRepo
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached DemoRepo
+hint: 
+hint: See "git help submodule" for more information.
+user: DemoRepo $ git commit -m "changes made in i18n file"
+[master 39e9295] changes made in i18n file
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 160000 DemoRepo
+user: DemoRepo $ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 455 bytes | 455.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/sri1292/DemoRepo.git
+   0b66bdf..39e9295  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+user: DemoRepo $         
